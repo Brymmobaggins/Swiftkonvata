@@ -1,9 +1,24 @@
 /** @format */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-header {
-  @apply text-center;
+body {
+  @apply font-karla;
 }
+h1 {
+  @apply text-center font-bold text-lg;
+}
+select {
+  @apply w-full border border-light-wisteria-600 rounded-xl p-1 text-sm outline-none  active:outline-light-wisteria-400;
+}
+#arrow {
+  @apply p-1;
+}
+input {
+  @apply border border-light-wisteria-600 p-1 w-full inline-block text-base rounded;
+}
+/* #fffaf3 */
+/* #c8ade8 */

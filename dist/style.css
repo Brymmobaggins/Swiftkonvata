@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
 /** @format */
 
 /*! tailwindcss v3.4.7 | MIT License | https://tailwindcss.com */
@@ -16,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -446,7 +448,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -500,7 +502,7 @@ video {
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,10 +556,97 @@ video {
   --tw-contain-style:  ;
 }
 
-.border {
-  border-width: 1px;
+.m-auto{
+  margin: auto;
 }
 
-header {
+.mt-4{
+  margin-top: 1rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.size-6{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-\[25\%\]{
+  width: 25%;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.max-w-full{
+  max-width: 100%;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.bg-\[\#fffaf3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 250 243 / var(--tw-bg-opacity));
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+body{
+  font-family: Karla, sans-serif;
+}
+
+h1{
   text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
 }
+
+select{
+  width: 100%;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(140 89 196 / var(--tw-border-opacity));
+  padding: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+select:active{
+  outline-color: #c8ade8;
+}
+
+#arrow{
+  padding: 0.25rem;
+}
+
+input{
+  display: inline-block;
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(140 89 196 / var(--tw-border-opacity));
+  padding: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* #fffaf3 */
+
+/* #c8ade8 */

@@ -1,34 +1,56 @@
 <!-- @format -->
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>Currencies Converter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Currency converter</h1>
+      <h1>Cash Mingle</h1>
     </header>
     <main>
-      <article>
+      <article class="w-[25%] max-w-full m-auto px-2 bg-[#fffaf3]">
         <div>
-          <select>
-            <option value="NAIRA">NAIRA</option>
-            <option value="EUR">EUR</option>
-            <option value="NAIRA">POUNDS</option>
-            <option value="NAIRA">DOLLAR</option>
-          </select>
+          <label for="">Enter a value</label>
+          <input type="number" id="amount" placeholder="e.g 50" />
         </div>
-        <div>
-          <select>
-            <option value="NAIRA">NAIRA</option>
-            <option value="EUR">EUR</option>
-            <option value="NAIRA">POUNDS</option>
-            <option value="NAIRA">DOLLAR</option>
-          </select>
+        <div class="flex gap-3 mt-4 w-full">
+          <div class="w-1/2">
+            <select>
+              <option value="NAIRA">NAIRA</option>
+              <option value="EUR">EUR</option>
+              <option value="POUNDS">POUNDS</option>
+              <option value="USD">USD</option>
+            </select>
+          </div>
+          <div class="" id="arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+          <div class="w-1/2">
+            <select>
+              <option value="NAIRA">NAIRA</option>
+              <option value="EUR">EUR</option>
+              <option value="POUNDS">POUNDS</option>
+              <option value="USD">USD</option>
+            </select>
+          </div>
         </div>
       </article>
+      <p></p>
     </main>
   </body>
 </html>
