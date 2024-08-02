@@ -23,6 +23,9 @@ nav h1 {
 /* #dropdown {
   @apply text-xs  border px-1 absolute w-1/4 top-4 right-3;
 } */
+ main{
+  @apply mt-3
+ }
 label {
   @apply inline-block text-base text-silver-chalice-800;
 }

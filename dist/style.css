@@ -649,6 +649,10 @@ nav h1{
   @apply text-xs  border px-1 absolute w-1/4 top-4 right-3;
 } */
 
+main{
+  margin-top: 0.75rem;
+}
+
 label{
   display: inline-block;
   font-size: 1rem;
