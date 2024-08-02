@@ -8,17 +8,37 @@
 body {
   @apply font-karla;
 }
-h1 {
-  @apply text-center font-bold text-lg;
+header {
+  @apply bg-bridal-heath-50 w-[25%] m-auto relative;
+}
+nav {
+  @apply flex justify-between p-1 items-center;
+}
+nav h1 {
+  @apply font-bold;
+}
+#settings-icon {
+  @apply hover:cursor-pointer hover:text-silver-chalice-700 text-xl;
+}
+/* #dropdown {
+  @apply text-xs  border px-1 absolute w-1/4 top-4 right-3;
+} */
+label {
+  @apply inline-block text-base text-silver-chalice-800;
+}
+input {
+  @apply border border-light-wisteria-300 p-1 w-full inline-block text-base rounded outline-none focus:border-light-wisteria-600 active:border-light-wisteria-600;
 }
 select {
-  @apply w-full border border-light-wisteria-600 rounded-xl p-1 text-sm outline-none  active:outline-light-wisteria-400;
+  @apply w-full border border-light-wisteria-600 rounded-xl p-1 text-sm font-bold outline-none  active:outline-light-wisteria-400 text-silver-chalice-700;
 }
 #arrow {
   @apply p-1;
 }
-input {
-  @apply border border-light-wisteria-600 p-1 w-full inline-block text-base rounded;
+button {
+  @apply block border-none rounded text-[#ffffff] text-sm m-auto font-medium px-1 bg-light-wisteria-500 hover:bg-light-wisteria-600 mt-3;
 }
-/* #fffaf3 */
-/* #c8ade8 */
+
+#footer div {
+  @apply text-light-wisteria-500 text-xs absolute left-3 top-44 right-0 text-center;
+}
