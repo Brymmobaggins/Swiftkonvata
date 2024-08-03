@@ -556,14 +556,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.relative{
-  position: relative;
-}
-
-.m-auto{
-  margin: auto;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -581,84 +573,103 @@ video {
   height: 1.5rem;
 }
 
-.h-\[200px\]{
-  height: 200px;
-}
-
 .w-1\/2{
   width: 50%;
 }
 
-.w-\[25\%\]{
-  width: 25%;
+.gap-2{
+  gap: 0.5rem;
 }
 
-.w-full{
-  width: 100%;
-}
-
-.max-w-full{
-  max-width: 100%;
-}
-
-.bg-bridal-heath-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 250 243 / var(--tw-bg-opacity));
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.p-1{
+  padding: 0.25rem;
 }
 
 body{
+  height: 100vh;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 250 243 / var(--tw-bg-opacity));
   font-family: Karla, sans-serif;
 }
 
 header{
-  position: relative;
-  margin: auto;
-  width: 25%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 250 243 / var(--tw-bg-opacity));
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(223 223 223 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px){
+  header{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 nav{
+  margin: auto;
+  margin-top: 0.75rem;
   display: flex;
+  height: 2.5rem;
+  width: 100%;
+  max-width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 nav h1{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 700;
 }
 
-#settings-icon{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+@media (min-width: 1024px){
+  nav h1{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
-#settings-icon:hover{
-  cursor: pointer;
-  --tw-text-opacity: 1;
-  color: rgb(123 123 123 / var(--tw-text-opacity));
+main {
 }
 
-/* #dropdown {
-  @apply text-xs  border px-1 absolute w-1/4 top-4 right-3;
-} */
+#converter-container{
+  margin: auto;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 100%;
+  --tw-border-opacity: 1;
+  border-color: rgb(214 195 239 / var(--tw-border-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 
-main{
-  margin-top: 0.75rem;
+@media (min-width: 640px){
+  #converter-container{
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px){
+  #converter-container{
+    width: 25%;
+  }
 }
 
 label{
   display: inline-block;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(103 103 103 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  label{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 input{
@@ -669,8 +680,8 @@ input{
   --tw-border-opacity: 1;
   border-color: rgb(214 195 239 / var(--tw-border-opacity));
   padding: 0.25rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
@@ -683,6 +694,13 @@ input:focus{
 input:active{
   --tw-border-opacity: 1;
   border-color: rgb(140 89 196 / var(--tw-border-opacity));
+}
+
+@media (min-width: 640px){
+  input{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 select{
@@ -705,10 +723,6 @@ select:active{
   outline-color: #c8ade8;
 }
 
-#arrow{
-  padding: 0.25rem;
-}
-
 button{
   margin: auto;
   margin-top: 0.75rem;
@@ -717,8 +731,8 @@ button{
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(163 118 214 / var(--tw-bg-opacity));
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
@@ -731,14 +745,36 @@ button:hover{
   background-color: rgb(140 89 196 / var(--tw-bg-opacity));
 }
 
-#footer div{
-  position: absolute;
-  left: 0.75rem;
-  top: 11rem;
-  right: 0px;
-  text-align: center;
-  font-size: 0.75rem;
-  line-height: 1rem;
+#settings-icon{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+#settings-icon:hover{
+  cursor: pointer;
+  --tw-text-opacity: 1;
+  color: rgb(123 123 123 / var(--tw-text-opacity));
+}
+
+footer{
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(163 118 214 / var(--tw-text-opacity));
 }
+
+footer > div{
+  border-width: 1px;
+}
+
+/* #arrow {
+  @apply p-1;
+}
+
+
+#footer div {
+  @apply text-light-wisteria-500 text-xs absolute left-3 top-44 right-0 text-center;
+}  */
