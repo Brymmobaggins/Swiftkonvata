@@ -38,12 +38,13 @@ button {
 }
 
 #settings-icon {
-  @apply hover:cursor-pointer hover:text-silver-chalice-700 text-xl;
+  @apply flex text-base items-center hover:cursor-pointer hover:text-silver-chalice-700;
 }
+
 footer {
   @apply flex justify-end gap-2 text-light-wisteria-500 text-sm;
 }
-footer > div{
+footer > div {
   @apply border;
 }
 

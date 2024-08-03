@@ -585,6 +585,10 @@ video {
   padding: 0.25rem;
 }
 
+.pl-1{
+  padding-left: 0.25rem;
+}
+
 body{
   height: 100vh;
   --tw-bg-opacity: 1;
@@ -746,8 +750,10 @@ button:hover{
 }
 
 #settings-icon{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 #settings-icon:hover{
