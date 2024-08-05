@@ -39,23 +39,8 @@
                 <option value="USD">USD</option>
               </select>
             </div>
-            <div>
-              <div class="p-1" id="arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </div>
+            <div class="p-1" id="arrow">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </div>
 
             <div class="w-1/2">
@@ -73,30 +58,24 @@
       </article>
     </main>
     <footer class="border">
-      <div class="md:flex *:px-1 border">
-        <div>feedback</div>
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            class="size-5"
-          >
-            <path
-              d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z"
-            />
-            <path
-              d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z"
-            />
-          </svg>
-          Contact support
-        </div>
-        <div>buy me a coffee</div>
-      </div>
-      <div class="border">
-        <div>Swiftkonvata | v1.0</div>
-      </div>
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-envelope" aria-hidden="true"></i>contact</li>
+        <li><i class="fa-li fab fa-twitter" aria-hidden="true"></i>twitter</li>
+        <li>
+          <i class="fa-li fa fa-coffee" aria-hidden="true"></i>buy me a drink
+        </li>
+        <li><i class="fa-li fab fa-github" aria-hidden="true"></i>github</li>
+      </ul>
+      <span class="border">
+        <i class="fa fa-code-fork" aria-hidden="true"></i>version |v1.0
+      </span>
     </footer>
     <script src="script.js"></script>
   </body>
 </html>
+<!-- <ul class="fa-ul">
+  <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+  <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+  <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+  <li><i class="fa-li fa fa-square"></i>in lists</li>
+</ul> -->
