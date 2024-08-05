@@ -3,9 +3,9 @@
 // const result = document.getElementById("result");
 const input = document.getElementById("amount");
 console.log(input);
-const currency = document.getElementById("currency");
+const currency = document.getElementById("from-currency");
 const result = document.getElementById("result");
-const convertButton = document.getElementById("convert");
+const convertButton = document.getElementById("convert-button");
 const settingsIcon = document.getElementById("settings-icon");
 const dropdown = document.getElementById("dropdown")
 const API_key = "";

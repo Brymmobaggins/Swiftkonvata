@@ -568,6 +568,11 @@ video {
   display: none;
 }
 
+.size-5{
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .size-6{
   width: 1.5rem;
   height: 1.5rem;
@@ -581,12 +586,12 @@ video {
   gap: 0.5rem;
 }
 
-.p-1{
-  padding: 0.25rem;
+.border{
+  border-width: 1px;
 }
 
-.pl-1{
-  padding-left: 0.25rem;
+.p-1{
+  padding: 0.25rem;
 }
 
 body{
@@ -644,6 +649,7 @@ main {
   margin-top: 1rem;
   width: 100%;
   max-width: 100%;
+  border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(214 195 239 / var(--tw-border-opacity));
   padding-left: 0.5rem;
@@ -751,11 +757,20 @@ button:hover{
   background-color: rgb(140 89 196 / var(--tw-bg-opacity));
 }
 
-#settings-icon{
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  line-height: 1.5rem;
+#result p{
+  border-width: 1px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(103 103 103 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  #result p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 #settings-icon:hover{
@@ -767,9 +782,9 @@ button:hover{
 footer{
   position: absolute;
   bottom: 3rem;
-  right: 4rem;
+  margin: auto;
   display: flex;
-  width: 80%;
+  width: 100%;
   max-width: 100%;
   justify-content: space-between;
   gap: 0.5rem;
@@ -779,15 +794,13 @@ footer{
   color: rgb(163 118 214 / var(--tw-text-opacity));
 }
 
-/* #arrow {
-  @apply p-1;
+.\*\:px-1 > *{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
-
-#footer div {
-  @apply text-light-wisteria-500 text-xs absolute left-3 top-44 right-0 text-center;
-}  */
-
-.\*\:p-1 > *{
-  padding: 0.25rem;
+@media (min-width: 768px){
+  .md\:flex{
+    display: flex;
+  }
 }

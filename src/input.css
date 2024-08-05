@@ -21,7 +21,7 @@ main {
 }
 
 #converter-container {
-  @apply max-w-full w-full m-auto border-light-wisteria-300 px-2 mt-4 sm:w-[45%] lg:w-[25%];
+  @apply max-w-full w-full m-auto border-light-wisteria-300 px-2 mt-4 sm:w-[45%] lg:w-[25%] border;
 }
 label {
   @apply inline-block text-sm sm:text-base text-silver-chalice-800;
@@ -36,20 +36,13 @@ select {
 button {
   @apply block border-none rounded text-[#ffffff] text-sm m-auto font-medium px-1.5 h-6 bg-light-wisteria-500 hover:bg-light-wisteria-600 mt-3;
 }
-
+#result p {
+  @apply text-lg text-silver-chalice-800 font-bold md:text-base border;
+}
 #settings-icon {
-  @apply flex text-base items-center hover:cursor-pointer hover:text-silver-chalice-700;
+  @apply hover:cursor-pointer hover:text-silver-chalice-700;
 }
 
 footer {
-  @apply flex justify-between gap-2 text-light-wisteria-500 text-sm max-w-full w-[80%] absolute bottom-12 right-16;
+  @apply flex justify-between gap-2 text-light-wisteria-500 text-sm max-w-full w-[100%] m-auto absolute bottom-12;
 }
-
-/* #arrow {
-  @apply p-1;
-}
-
-
-#footer div {
-  @apply text-light-wisteria-500 text-xs absolute left-3 top-44 right-0 text-center;
-}  */
